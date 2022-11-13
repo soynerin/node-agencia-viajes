@@ -3,4 +3,28 @@ extends ./layout/index
 block contenido
     main.container.mt-5 
         .row 
-            h1= pagina
+            .col-md-5
+                img(src="/img/nosotros.jpg", alt="Nosotros", class="img-fluid")
+            .col-md-7
+                h1.mb-4= pagina
+                blockquote Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, officiis repellat non iste quo voluptatibus ad possimus optio corporis fugit fuga ut molestias, odio dolores magnam, sit libero doloremque quos!
+
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi impedit? Fuga alias quasi at neque, necessitatibus, provident itaque corporis sint quia qui, totam veniam autem sunt minima. 
+
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi explicabo earum iste autem quasi enim laudantium nostrum saepe dicta! Voluptatum impedit expedita repellendus molestiae voluptas dolor fugiat libero obcaecati nisi! 
+
+    .listado-iconos     
+        .container.mt-5.py-5.text-center 
+            .row    
+                .col-md-4   
+                    img(src="/img/icono_seguridad.svg", alt="Icono Seguridad", class="img-fluid mb-4")
+                    h2.mb-4  Seguridad
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                .col-md-4   
+                    img(src="/img/icono_destinos.svg", alt="Destinos", class="img-fluid mb-4")
+                    h2.mb-4  Mejores Destinos
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                .col-md-4   
+                    img(src="/img/icono_precios.svg", alt="Icono Preciones", class="img-fluid mb-4")
+                    h2.mb-4  Los Mejores Precios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
