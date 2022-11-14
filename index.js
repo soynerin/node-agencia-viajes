@@ -20,6 +20,9 @@ app.use((req, res, next) => {
     next();
 })
 
+// Para leer datos del formulario
+app.use(express.urlencoded({ extended: true }));
+
 app.use(express.static('public'));
 
 app.use('/', router);
