@@ -58,8 +58,6 @@ const paginaTestimoniales = async (req, res) => {
     try {
         const testimoniales = await Testimonial.findAll();
 
-        console.log(testimoniales);
-
         res.render('testimoniales', {
             pagina: 'Testimoniales',
             testimoniales                            
