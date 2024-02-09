@@ -2,14 +2,14 @@ import { Testimonial } from "../models/Testimonial.js";
 
 const guardarTestimonial = async (req, res) => {
     // Validar que todos los campos esten llenos
-    const { nombre, email, mensaje } = req.body;
+    const { nombre, correo, mensaje } = req.body;
 
     let errores = [];
 
     if(nombre.trim() === '') {
         errores.push({ mensaje: 'El nombre esta vacio' });
     }
-    if(email.trim() === '') {
+    if(correo.trim() === '') {
         errores.push({ mensaje: 'El correo esta vacio' });
     }
     if(mensaje.trim() === '') {
@@ -25,7 +25,7 @@ const guardarTestimonial = async (req, res) => {
             pagina: 'Testimoniales',
             errores,
             nombre,
-            email,
+            correo,
             mensaje,
             testimoniales
         });
@@ -34,7 +34,7 @@ const guardarTestimonial = async (req, res) => {
         try {
             await Testimonial.create({
                 nombre,
-                email,
+                correo,
                 mensaje
             });
             res.redirect('/testimoniales');

@@ -5,7 +5,7 @@ export const Testimonial = db.define("testimoniales", {
     nombre: {
         type: Sequelize.STRING
     },
-    email: {
+    correo: {
         type: Sequelize.STRING
     },
     mensaje: {
